@@ -1,0 +1,28 @@
+# compiled directries #
+#######################
+bin/
+obj/
+
+
+# ide user or temp files #
+#############
+*.userprefs
+*.suo
+*.csproj.user
+*~ #vim temp file
+
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+ehthumbs.db
+Thumbs.db
+
+# SourceGear Vault hidden directories #
+#######################################
+_sgbak/
+_sgvault/

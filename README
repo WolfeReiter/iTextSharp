@@ -1,0 +1,11 @@
+iTextSharp
+=========
+Fork of iTextSharp retaining LGPL/MPL licensing. Also, removes bundling of Bouncy Castle Crypto library, linking to BCC instead.
+
+
+Legal
+=====
+Forked from the v4.1.6 MPL / LGPLv2 version.
+
+http://opensource.org/licenses/LGPL-2.1
+http://www.mozilla.org/MPL/1.1/
