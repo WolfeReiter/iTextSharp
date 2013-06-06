@@ -8,6 +8,7 @@ using Org.BouncyCastle.Ocsp;
 using Org.BouncyCastle.Asn1;
 using Org.BouncyCastle.Asn1.X509;
 using Org.BouncyCastle.Asn1.Ocsp;
+using System.Collections.Generic;
 /*
  * $Id: OcspClientBouncyCastle.java 3959 2009-06-09 08:31:05Z blowagie $
  *
@@ -102,9 +103,9 @@ namespace iTextSharp.text.pdf {
             gen.AddRequest(id);
             
             // create details for nonce extension
-            ArrayList oids = new ArrayList();
-            ArrayList values = new ArrayList();
-            
+            var oids = new List<DerObjectIdentifier>();
+            var values = new List<X509Extension>();            
+
             oids.Add(OcspObjectIdentifiers.PkixOcspNonce);
             values.Add(new X509Extension(false, new DerOctetString(new DerOctetString(PdfEncryption.CreateDocumentId()).GetEncoded())));
             

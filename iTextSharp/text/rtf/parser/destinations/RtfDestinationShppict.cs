@@ -178,7 +178,6 @@ namespace iTextSharp.text.rtf.parser.destinations {
         private MemoryStream dataOS = null;
         
         public RtfDestinationShppict() : base(null) {
-            this.pictureType = pictureType; //get rid of a warning
         }
 
         /**
@@ -487,5 +486,6 @@ namespace iTextSharp.text.rtf.parser.destinations {
             }
         }
 
+        public int PictureType { get { return pictureType; } }//silence warning that pictureType field is assigned but never used.
     }
 }
