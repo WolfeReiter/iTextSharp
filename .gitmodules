@@ -1,0 +1,3 @@
+[submodule "extern/BouncyCastleCrypto"]
+	path = extern/BouncyCastleCrypto
+	url = https://github.com/WolfeReiter/BouncyCastleCrypto.git

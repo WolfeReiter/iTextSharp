@@ -1,8 +1,10 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "itextsharp", "itextsharp.csproj", "{84C4FDD9-3ED7-453B-B9DA-B3ED52CB071C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "bccrypto", "..\BouncyCastleCrypto\crypto\bccrypto.csproj", "{38872A5F-E87E-4FAD-B109-8EB7B2E6A4A0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "bccrypto", "extern\BouncyCastleCrypto\crypto\bccrypto.csproj", "{38872A5F-E87E-4FAD-B109-8EB7B2E6A4A0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

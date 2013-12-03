@@ -1464,7 +1464,7 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\BouncyCastleCrypto\crypto\bccrypto.csproj">
+    <ProjectReference Include="extern\BouncyCastleCrypto\crypto\bccrypto.csproj">
       <Project>{38872a5f-e87e-4fad-b109-8eb7b2e6a4a0}</Project>
       <Name>bccrypto</Name>
     </ProjectReference>
