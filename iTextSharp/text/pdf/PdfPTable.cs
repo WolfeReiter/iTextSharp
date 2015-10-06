@@ -477,6 +477,8 @@ namespace iTextSharp.text.pdf {
             PdfPCell aboveCell = (PdfPCell)aboveRow.GetCells()[currCol];
             while ((aboveCell == null) && (row > 0)) {
                 aboveRow  = (PdfPRow)rows[--row];
+                //issue-1: NullReferenceExcpetion can be thrown if aboveRow is null
+                if (aboveRow == null) return false;
                 aboveCell = (PdfPCell)aboveRow.GetCells()[currCol];
             }
             
