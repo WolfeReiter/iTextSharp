@@ -97,7 +97,7 @@ namespace iTextSharp.text {
             if ( globals != null ) {
                 this.global = globals;
                 try {
-                    MD5 md5 = new MD5CryptoServiceProvider();
+                    HashAlgorithm md5 = HashAlgorithm.Create("MD5");
                     md5.Initialize();
                     this.globalHash = md5.ComputeHash(this.global);
                 } catch {

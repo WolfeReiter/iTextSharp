@@ -132,7 +132,7 @@ namespace iTextSharp.text.pdf {
         internal class ByteStore {
             private byte[] b;
             private int hash;
-            private MD5 md5;
+            private HashAlgorithm md5;
             
             private void SerObject(PdfObject obj, int level, ByteBuffer bb) {
                 if (level <= 0)
@@ -189,7 +189,7 @@ namespace iTextSharp.text.pdf {
             }
             
             internal ByteStore(PRStream str) {
-                md5 = new MD5CryptoServiceProvider();
+                md5 = HashAlgorithm.Create("MD5");
                 ByteBuffer bb = new ByteBuffer();
                 int level = 100;
                 SerObject(str, level, bb);
